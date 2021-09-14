@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>          
+<style>
+.mydiv {
+    border: 2px grey;
+	background-color : #FFFFFF;
+	padding-left : 500px;
+	width : 450px;
+	height : 60px;
+}
+</style>
+</head>
+<body>
+<h2>TO THE NEW</h2> <span> Home Quick Help</span>
+<div class = ".mydiv" style="padding-left : 500px ; padding-right : 400px;">
+<form>
+<div style ="border-style : groove ; background-color : #39C7AB ; margin : auto;">
+<h3 style = "background-color : #39C7AB ; border-radius : 5px"> Bug Report </h3>
+</div>
+
+<div style ="border-style : groove ; margin : auto; padding : 5px 5px 5px 5px">
+<tr>
+<b><label for = "Title">Title:<span class = "required" ; style = "color : grey">*</span></label></b>
+<td> <textarea name = "Title" rows = "1" cols = "45"></textarea>
+   </tr>
+
+<tr>
+<b><label for ="Description">Description:<span class = "required" ; style = "color : grey">*</span></label></b>
+   <td> <textarea name = "Description" rows = "4" cols = "45"></textarea>
+   </td>
+   </tr>
+   
+<tr>
+<b><label for ="Operating System">Operating System:<span style = "color : grey"></span></label></b>
+   <td><br><select name="Windows XP" style = "width: 352px;background-color: #39C7AB" >
+			<option value="Windows XP">Windows XP</option>
+			<option value="Linux">Ubuntu</option>
+			</select></br>
+			</td>
+			
+<tr>
+<b><label for ="Product">Product:<span class ="required" ; style = "color : grey">*</span></label></b>
+   <td><br><select name="Formoid" style = "width: 352px;background-color: #39C7AB" >
+			<option value="Formoid">Formoid</option>
+			</select></br>
+			</td>
+
+<tr>
+<b><label for = "Version">Version:<span class = "required" ; style = "color : grey">*</span></label></b>
+<td><br><textarea name = "Version" rows = "1" cols = "25"></textarea></br>
+   </tr>
+
+<tr>
+<b><label for = "Licence">Licence:<span style = "color : grey"></span></label></b>
+<br><tr colspan=8><td>
+			<input type="radio" value="Free">Free</input>
+			<input type="radio" value="Business">Business</input>
+		</td></tr></br>
+		
+<tr>
+<b><label for ="Severity">Severity:<span style = "color : grey"></span></label></b>
+   <td><br><select name="Critical" style = "width: 352px;background-color: #39C7AB" >
+			<option value="Critical">Critical</option>
+			</select></br>
+			</td>		
+		
+<tr>
+<b><label for ="Attachments">Attachments:<span style = "color : grey"></span></label></b>
+			<td><input type="text" placeholder="No file Selected">
+			<button type="submit" value="submit" name="Choose File" >Choose File </button>
+		</td></tr>
+
+</div>
+	</div>
+	<div style="border-style: groove; margin-left: 500px; width: 360px; height: 60px;background-color:#FFFFFF " >
+		<input style="float: right;  background-color:#39C7AB;  border-radius: 5px ; padding: 10px 10px 10px 10px; margin: 5px 10px 10px 10px" type="submit" name="Send" value="send">
+	</div> 
+	</form>
+</body>
+</head>
+</html>
