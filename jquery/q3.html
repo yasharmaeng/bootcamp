@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .One-new{
+            font-size: 150px;
+            color: red;
+        }
+    </style>    
+    </head>
+
+    <body>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("[class$=-new").css("color","green");
+                })
+            });
+        </script>
+        <div class="One-new">YASH SHARMA</div>
+        <button>CHANGE COLOR</button>
+        
+    </body>
+</html>
