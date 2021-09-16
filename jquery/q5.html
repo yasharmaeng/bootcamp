@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#bbb").attr("disabled",true);
+	$(".target").attr("style", "font-size: 5rem");
+  });
+});
+</script>
+</head>
+<body>
+
+<button id="bbb">Click to increase the size of YASh</button>
+<p id="main" class="target"> YASH </p>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>Question 13</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+</head>
+<body>
+
+
+    <div>
+		<div class="panel">
+		  Line 1
+		  Line 2
+		</div>
+		<div class="panel">
+		  Line 1<br/>
+		  Line 2<br/>
+		  Line 3<br/>
+		  Line 4<br/>
+		</div>
+		<div class="panel">
+		  Line 1
+		</div>
+		<div class="panel">
+		  Line 1
+		  Line 2
+		</div>
+	</div>
+
+<script>
+
+/*$(document).ready(function()
+{
+        var highest = null;
+        var hi = 0;
+       $(".panel").each(function()
+       {
+         var h = $(this).height();
+		 console.log(h);
+         
+              if(h > hi){
+                   hi = h;
+                   highest=$(this);
+                    }         
+      });
+        alert('max height'+hi); 
+         $(highest).css("background-color","red");   
+});
+*/
+
+var heights = $("div.panel").map(function ()
+    {
+        return $(this).height();
+    }).get();
+	console.log(heights);
+
+maxHeight = Math.max.apply(null, heights);
+alert(maxHeight);
+
+
+</script>
+
+</body>
+</html>
