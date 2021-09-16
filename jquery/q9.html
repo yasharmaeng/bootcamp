@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dropdown Data Display</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script lang="javascript">
+$(document).ready(function(){
+
+$("#dd_list").change(function(){
+
+var datalist = $(this).children("option:selected").val();
+$("#container").append(datalist+"<br />");
+});
+});
+</script>
+</head>
+<body>
+<br />
+<select id="dd_list">
+	<option id="1">QQQ</option>
+	<option id="2">WWW </option>
+	<option id="3">EEE</option>
+	<option id="4">RRR</option>
+	<option id="5">TTT</option>
+	<option id="6">YYY</option>
+</select>
+<div id="container">
+</div>
+</body>
+</html>

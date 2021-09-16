@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.panel').on('click',function(){
+			alert('You clicked on panel');
+		}).children().on('click',function(e){
+			e.stopPropagation();
+		});
+        
+    });
+</script>
+</head>
+<body>
+	<div class="panel">HEY</div>
+	<p> List Of Child Elements</p>
+	<ul>
+		<li>(A)List One</li><br>
+		<li>(B)List Two</li><br>
+		<li>(C)List Three</li>
+	</ul>
+</body> 
+</html>

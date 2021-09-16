@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $.ajax({url:"demo.txt",async:'true',success:function(funto){
+				setTimeout(function(){
+					console.log(funto);
+					$('#vk').append('</br>'+funto);
+				},1000);
+			},error:function(){
+				console.log('"error')
+			}});
+        });
+        
+    });
+</script>
+</head>
+<body>
+	<button type="button">PRESS</button>
+	<div id="vk"><p> </p></div>
+</body> 
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".sal").each(function(i,n){
+            if($(n).text()>10)
+			$(n).css('background-color','silver');
+        });
+        
+    });
+</script>
+</head>
+<body>
+	<table id="tab1" style="border:2px solid purple">
+	<tr>
+		<th class="name">NAME</th>
+		<th class="sal">SALARY</th>
+		<th class="dept">DEPT</th>
+	</tr>
+	<tr>
+		<td class="name">YASH</td>
+		<td class="sal">20</td>
+		<td class="dept">CS</td>
+	</tr>
+	<tr>
+		<td class="name">ShARMA</td>
+		<td class="sal">9</td>
+		<td class="dept">EE</td>
+	</tr>
+	</table>
+</body> 
+</html>

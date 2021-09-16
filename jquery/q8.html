@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>jQuery Bind Click Event to Dynamically added Elements</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("div").append("<br>HEY</br>");
+			$("div").on("click",function(){
+				$("div").append("<br> HEY </br>");
+			} );
+        });
+        
+    });
+</script>
+</head>
+<body>
+	<div>
+
+	</div>
+	<button id="sub"> .ON ( I AM USING)</button>
+</body> 
+</html>
